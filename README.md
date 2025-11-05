@@ -34,3 +34,20 @@
 - img
 - video
 - iframe
+
+4. Table
+- table
+- tr
+- th
+- td
+- thead
+- tbody
+
+5. Block/Inline elements
+- Block: h1 - h6, p, div, li
+- Inline: a, span, img, video
+
+6. Semantics
+- All HTML elements should be in lowercase
+- Add `alt` text in images
+- HTML file naming: kebab-case: e.g. hello-world
