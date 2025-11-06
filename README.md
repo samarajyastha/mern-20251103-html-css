@@ -51,3 +51,56 @@
 - All HTML elements should be in lowercase
 - Add `alt` text in images
 - HTML file naming: kebab-case: e.g. hello-world
+
+7. Form
+- input: text, number, email, tel, checkbox, radio, file, color, date, time, range
+- form
+- select
+- option
+- textarea
+
+## CSS
+- Cascading Style Sheet
+- Web page styling like color, fonts, positioning, spacing
+
+**Syntax**
+```
+<selector> {
+    property: value;
+    ....
+}
+
+For e.g: 
+h1 {
+    ...
+}
+
+.class-name {
+   ... 
+}
+
+#id-name {
+    ....
+}
+```
+
+**Selector**
+- Element : h1, p, span : Lowest priority
+- Class : Element > Class Priority < Id : Recommended for CSS (.class-name)
+- Id: Highest priority (#id-name)
+
+**Class VS Id**
+- Class should be used for CSS, Id should be used for JS
+- Class name can be reused multiple times, Id must be unique
+
+**CSS Usage**
+- Inline
+- Internal
+- External
+
+### CSS Properties
+1. color, background-color
+2. text
+3. font
+4. box-model: margin, padding, border
+
