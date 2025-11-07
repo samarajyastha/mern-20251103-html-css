@@ -1,3 +1,6 @@
+:root {
+  font-size: 20px;
+}
 span {
   font-family: sans-serif;
   font-weight: bold;
@@ -63,4 +66,108 @@ a {
   border-top: 5px dashed red;
   padding: 20px;
   padding: 10px 20px 30px 40px; /* top left bottom right */
+}
+
+/* Display properties  */
+.container {
+  height: 100px;
+  width: 100px;
+  background-color: aquamarine;
+  margin: 1rem;
+  display: block; /* block, inline, inline-block, none */
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  background-color: burlywood;
+  display: inline-block;
+}
+
+/* Flex properties */
+.section {
+  display: flex;
+  flex-direction: row; /* row, column, row-reverse, column-reverse */
+  align-items: center;
+  justify-content: space-between; /* start, end, center, space-between, space-around, space-evenly */
+  column-gap: 1rem;
+}
+
+.item1 {
+  flex: 1;
+  height: 100px;
+  width: 100px;
+  background-color: chartreuse;
+}
+
+.item2 {
+  height: 150px;
+  width: 150px;
+  background-color: darkorange;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+/* List properties  */
+.list {
+  list-style: square; /* disc, circle, square, none */
+}
+
+/* pseudo (fake) class properties */
+.title:hover {
+  color: blue;
+}
+
+.list li:first-child {
+  color: red;
+}
+
+.list li:last-child {
+  color: green;
+}
+
+.list li:nth-child(5) {
+  color: blue;
+}
+
+.list li:nth-child(odd) {
+  color: pink;
+}
+
+input {
+  background-color: red;
+}
+
+input:disabled {
+  background-color: grey;
+}
+
+/* Units: px (pixel), em (relative to parent), rem (relative to root), 
+vh (viewing height), vw (viewing width), in (inch), cm  */
+.units {
+  color: #1e8607;
+  font-size: 1.5em;
+}
+
+.unit-box {
+  font-size: 40px;
+  width: 50%;
+  background-color: #c89999;
+  height: 200vh;
+}
+
+/* overflow properties  */
+.overflow-box {
+  border: 3px solid;
+  width: 50%;
+  height: 100px;
+  overflow: auto; /* auto, hidden, visible, scroll */ 
+}
+
+.overflow-box p {
+  color: black;
 }

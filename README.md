@@ -103,4 +103,30 @@ h1 {
 2. text
 3. font
 4. box-model: margin, padding, border
+5. display
+6. flex
+7. list
+8. pseudo-class
+9. units
+10. overflow
+11. table
+------------------------
+12. form
+13. position
+14. grid
+15. icon
+16. background-image
+17. responsive design
+18. transform
+19. animation
+20. variables
 
+## CV
+- image
+- name (heading)
+- phone, email
+- bio (paragraph)
+- skills (list)
+- education (table)
+- hobby (flex)
+- contact form
