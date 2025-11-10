@@ -115,8 +115,10 @@ h1 {
 14. grid
 15. icon
 16. background-image
-------------------------
 17. responsive design
 18. transform
 19. animation
 20. variables
+----------------------------
+
+## Tailwind CSS
