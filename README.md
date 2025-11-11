@@ -119,6 +119,20 @@ h1 {
 18. transform
 19. animation
 20. variables
-----------------------------
 
 ## Tailwind CSS
+
+- CSS framework
+- Used for building UI rapidly
+- Instead of writing CSS code, we use predefined utility classes directly in HTML
+- Highly customizable, works in dark mode, Just in time (JIT) compiler for faster builds
+
+---------------------------
+- Custom value
+- pseudo class
+- responsive design
+- dark mode
+- transform
+- animation
+- variables
+- Semantics

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- Color: text-{color}-{shade}  -->
+    <!-- Background color: bg-{color}-{shade}  -->
+    <h1 class="text-green-700 bg-green-100">Hello world</h1>
+
+    <!-- Background gradient: bg-gradient-<direction> from-{color}-{shade} to-{color}-{shade} -->
+    <h2 class="bg-gradient-to-r from-gray-500 to-red-600 text-white">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, dolor.
+    </h2>
+
+    <!-- Typography -->
+    <!-- Font size: xs, sm, md, lg, xl, 2xl, 3xl, 4xl .... 9xl  -->
+    <!-- Font weight: light, medium, semibold, bold, black -->
+    <!-- Text alignment : left, right, center, justify -->
+    <!-- Text decoration  -->
+    <p class="text-3xl font-semibold text-center tracking-tighter underline">
+      Hello world
+    </p>
+    <p class="text-justify leading-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+      distinctio voluptate natus deleniti, odit, aliquam fuga quidem
+      voluptatibus sed perferendis nemo omnis voluptatum reprehenderit! Fugiat,
+      aut! Pariatur quas est fugit.
+    </p>
+
+    <!-- Spacing: Margin & padding  -->
+    <!-- Margin: m -->
+    <!-- Padding: p -->
+    <!-- Top: t
+      Bottom: b 
+      Left: l 
+      Right: r 
+      Horizontal: x 
+      Vertical: y  -->
+    <h2 class="bg-red-500 m-5 p-3 my-10 pl-8">Hello world</h2>
+
+    <!-- Height: h & width: w  -->
+    <div class="bg-green-700 h-50 max-h-screen w-3/4">box</div>
+
+    <!-- Border  -->
+    <!-- Border radius : rounded -->
+    <div class="m-10 border border-red-500 border-2 border-dashed rounded-2xl">
+      box 2
+    </div>
+
+    <!-- Display: flex, block, inline, inline-block, grid, none (hidden) -->
+    <!-- Flex: align-items (items-<value>) justify-content (justify-<value>) -->
+    <div class="m-10 flex items-center justify-evenly">
+      <div class="bg-red-500 h-10">box1</div>
+      <div class="bg-green-500 h-15">box2</div>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-3 gap-5 justify-items-center">
+      <div class="bg-red-500 h-15 w-15 border rounded shadow-md shadow-red-500">
+        box
+      </div>
+      <div class="bg-green-500 h-15 w-15 border">box</div>
+      <div class="bg-blue-500 h-15 w-15 border">box</div>
+      <div class="bg-yellow-500 h-15 w-15 border">box</div>
+      <div class="bg-orange-500 h-15 w-15 border">box</div>
+      <div class="bg-amber-500 h-15 w-15 border">box</div>
+      <div class="bg-slate-500 h-15 w-15 border">box</div>
+      <div class="bg-gray-500 h-15 w-15 border">box</div>
+      <div class="bg-teal-500 h-15 w-15 border">box</div>
+      <div class="bg-lime-500 h-15 w-15 border">box</div>
+    </div>
+
+    <!-- Position: relative, absolute, sticky, fixed  -->
+    <div class="absolute top-10 left-10 h-15 w-15 bg-black">box</div>
+    <div class="fixed top-20 right-5 h-15 w-15 bg-teal-900 z-10"></div>
+    <div class="sticky top-0 h-15 w-full bg-orange-900 opacity-20"></div>
+    <div class="h-screen w-full">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, modi. Hic
+      deleniti, tempora illum temporibus recusandae cupiditate, exercitationem
+      dolore iste maxime iusto facere laborum cumque eveniet! Repudiandae eum
+      consequuntur vero.
+    </div>
+
+    <!-- Overflow  -->
+    <div class="h-50 w-1/2 border overflow-auto">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos labore
+      consectetur harum praesentium ullam dicta culpa esse quidem facilis fuga
+      atque accusantium illum aliquid, eaque officia sit! Expedita ipsa, cumque
+      omnis earum non hic nostrum perferendis quia ex fugiat saepe illum. Alias
+      temporibus ut commodi esse. Vero cumque molestias accusantium deserunt,
+      impedit modi ex eligendi dolorum ratione fugiat excepturi harum voluptas
+      corrupti doloribus qui tempora mollitia consectetur, sunt inventore in?
+      Provident quae, repellendus magnam atque quod, veniam eius unde, tempora
+      ipsa dolore dicta nostrum omnis. Commodi recusandae quos nostrum, autem
+      sint asperiores, enim porro accusantium error debitis quidem repellendus
+      quae minima aperiam inventore ullam esse doloribus sed nobis optio
+      tempore. Labore debitis omnis error id minima animi at quasi libero.
+      Dolorem quod in quae consectetur nam illo aliquid suscipit ea consequuntur
+      esse ab impedit vitae soluta iure tenetur corporis similique maxime eos
+      quam, fugit inventore praesentium est sed tempora. Quasi, ipsum sed? Ab
+      illo vel numquam ad, nobis, deleniti odit dicta non voluptas repellendus,
+      error nihil hic quaerat ex! Cupiditate ut nihil, repudiandae assumenda
+      incidunt nostrum minus nesciunt reprehenderit veritatis non similique
+      repellat aliquid eos atque accusamus perspiciatis iusto, labore temporibus
+      in! Aspernatur ex hic commodi in exercitationem odio laudantium maxime
+      eius id, laborum accusamus rem cum dolorum ullam ducimus quod eos.
+      Doloribus perspiciatis fugiat alias aut distinctio, necessitatibus odit
+      quas ratione modi ea tempora iusto odio animi id atque. Reprehenderit
+      accusantium autem dicta facilis quasi quod magnam numquam rem quibusdam
+      fugit culpa non optio, praesentium velit magni! Quod fuga autem iste harum
+      nobis ad quam quasi consequuntur laboriosam dolores? Eveniet corporis odio
+      impedit vero exercitationem repellendus voluptas omnis veritatis,
+      similique optio mollitia minima porro sequi quasi qui quos et quas quia.
+      Saepe, voluptatibus. Facilis ex nobis rem, voluptatem odit dignissimos
+      doloremque? Iusto deserunt error facilis, sint voluptates nobis soluta.
+    </div>
+
+    <div class="w-1/5 h-50 bg-slate-100 m-5 rounded-xl shadow-md border border-gray-300"></div>
+  </body>
+</html>
