@@ -4,9 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#4361ee",
+              secondary: "#00563b",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
+  <body class="dark">
     <!-- Color: text-{color}-{shade}  -->
     <!-- Background color: bg-{color}-{shade}  -->
     <h1 class="text-green-700 bg-green-100">Hello world</h1>
@@ -43,7 +56,7 @@
     <h2 class="bg-red-500 m-5 p-3 my-10 pl-8">Hello world</h2>
 
     <!-- Height: h & width: w  -->
-    <div class="bg-green-700 h-50 max-h-screen w-3/4">box</div>
+    <div class="bg-green-700 h-52 max-h-screen w-3/4">box</div>
 
     <!-- Border  -->
     <!-- Border radius : rounded -->
@@ -59,20 +72,36 @@
     </div>
 
     <!-- Grid -->
-    <div class="grid grid-cols-3 gap-5 justify-items-center">
-      <div class="bg-red-500 h-15 w-15 border rounded shadow-md shadow-red-500">
+    <!-- Responsive design: sm, md, lg, xl -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 justify-items-center"
+    >
+      <div
+        class="bg-red-500 h-52 w-52 border rounded shadow-md shadow-red-500 text-xl sm:text-3xl lg:text-5xl"
+      >
         box
       </div>
-      <div class="bg-green-500 h-15 w-15 border">box</div>
-      <div class="bg-blue-500 h-15 w-15 border">box</div>
-      <div class="bg-yellow-500 h-15 w-15 border">box</div>
-      <div class="bg-orange-500 h-15 w-15 border">box</div>
-      <div class="bg-amber-500 h-15 w-15 border">box</div>
-      <div class="bg-slate-500 h-15 w-15 border">box</div>
-      <div class="bg-gray-500 h-15 w-15 border">box</div>
-      <div class="bg-teal-500 h-15 w-15 border">box</div>
-      <div class="bg-lime-500 h-15 w-15 border">box</div>
+      <div class="bg-green-500 h-52 w-52 border">box</div>
+      <div class="bg-blue-500 h-52 w-52 border">box</div>
+      <div class="bg-yellow-500 h-52 w-52 border">box</div>
+      <div class="bg-orange-500 h-52 w-52 border">box</div>
+      <div class="bg-amber-500 h-52 w-52 border">box</div>
+      <div class="bg-slate-500 h-52 w-52 border">box</div>
+      <div class="bg-gray-500 h-52 w-52 border">box</div>
+      <div class="bg-teal-500 h-52 w-52 border">box</div>
+      <div class="bg-lime-500 h-52 w-52 border">box</div>
     </div>
+
+    <!-- Dark mode  -->
+    <h1
+      class="text-2xl sm:text-4xl md:text-5xl lg:text-7xl xl:text-9xl bg-red-400 dark:bg-slate-800 dark:text-white dark:px-20"
+    >
+      Hello world
+    </h1>
+
+    <h2 class="text-5xl text-secondary dark:bg-secondary dark:text-white">
+      Hello
+    </h2>
 
     <!-- Position: relative, absolute, sticky, fixed  -->
     <div class="absolute top-10 left-10 h-15 w-15 bg-black">box</div>
@@ -86,7 +115,7 @@
     </div>
 
     <!-- Overflow  -->
-    <div class="h-50 w-1/2 border overflow-auto">
+    <div class="h-52 w-1/2 border overflow-auto">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos labore
       consectetur harum praesentium ullam dicta culpa esse quidem facilis fuga
       atque accusantium illum aliquid, eaque officia sit! Expedita ipsa, cumque
@@ -119,6 +148,27 @@
       doloremque? Iusto deserunt error facilis, sint voluptates nobis soluta.
     </div>
 
-    <div class="w-1/5 h-50 bg-slate-100 m-5 rounded-xl shadow-md border border-gray-300"></div>
+    <button
+      class="bg-[#286291] text-white px-[9px] rounded hover:bg-blue-700 hover:underline border-2 border-blue-300 focus:border-red-300 disabled:bg-gray-400"
+    >
+      Click me
+    </button>
+
+    <!-- Custom value: property-[value] -->
+    <div
+      class="w-[200px] h-52 bg-slate-100 m-5 rounded-xl shadow-md border border-gray-300 hover:bg-slate-300 transition ease-in duration-500"
+    ></div>
+
+    <div
+      class="w-52 h-52 bg-secondary hover:scale-150 transition duration-300"
+    ></div>
+
+    <!-- Transform: translate, rotate, scale, skew -->
+    <div class="m-20 border-2">
+      <div
+        class="bg-secondary h-52 w-52 translate-y-8 rotate-12 scale-90 skew-y-12"
+      ></div>
+    </div>
+    <div class="bg-secondary h-52 w-52 animate-bounce"></div>
   </body>
 </html>

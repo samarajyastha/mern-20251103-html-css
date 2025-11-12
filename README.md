@@ -127,12 +127,3 @@ h1 {
 - Instead of writing CSS code, we use predefined utility classes directly in HTML
 - Highly customizable, works in dark mode, Just in time (JIT) compiler for faster builds
 
----------------------------
-- Custom value
-- pseudo class
-- responsive design
-- dark mode
-- transform
-- animation
-- variables
-- Semantics
