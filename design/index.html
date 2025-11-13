@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techno</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3b82f6",
+              secondary: "#1e40af",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="light">
+    <div
+      class="w-full text-center py-1 text-sm text-white bg-gray-800 dark:bg-gray-100 dark:text-black"
+    >
+      Notice
+    </div>
+    <header class="w-full bg-white dark:bg-gray-900 sticky top-0 shadow">
+      <div class="container mx-auto py-3 px-4">
+        <div class="flex items-center justify-between">
+          <!-- Logo  -->
+          <h1 class="text-xl font-semibold text-primary">
+            <a href="#">Techno</a>
+          </h1>
+
+          <!-- Navbar -->
+          <nav class="hidden md:flex gap-5">
+            <a
+              href="#"
+              class="text-gray-700 font-medium hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 font-medium hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+              >About</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 font-medium hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+              >Products</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 font-medium hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 font-medium hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+              >Blogs</a
+            >
+            <a
+              href="#"
+              class="text-gray-700 font-medium hover:text-primary dark:text-gray-300 dark:hover:text-primary"
+              >Contact</a
+            >
+          </nav>
+
+          <div class="flex items-center">
+            <button
+              class="text-gray-700 p-1 dark:text-gray-300 hover:text-primary"
+            >
+              <i class="fas fa-moon"></i>
+            </button>
+            <button
+              class="text-gray-700 p-1 dark:text-gray-300 hover:text-primary"
+            >
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+            <button
+              class="text-gray-700 p-1 dark:text-gray-300 hover:text-primary"
+            >
+              <i class="fas fa-user"></i>
+            </button>
+            <button
+              class="block md:hidden text-gray-700 p-1 dark:text-gray-300"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Hero section -->
+      <section
+        class="py-12 bg-gradient-to-r from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900"
+      >
+        <div class="container mx-auto px-4">
+          <!-- Hero content -->
+          <div class="flex flex-col md:flex-row items-center gap-5">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+              <h1
+                class="text-4xl md:text-5xl font-bold text-gray-800 mb-4 dark:text-gray-200"
+              >
+                Innovative <span class="text-primary">Techno</span> Products
+              </h1>
+              <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+                cupiditate et est facilis nisi mollitia harum aspernatur
+                excepturi doloremque earum.
+              </p>
+
+              <div class="flex space-x-4">
+                <button
+                  class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary font-medium transition duration-300"
+                >
+                  Shop Now
+                </button>
+                <button
+                  class="border border-primary text-primary px-6 py-2 rounded-lg dark:text-white hover:bg-primary hover:text-white font-medium transition duration-300"
+                >
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+            <div class="md:w-1/2">
+              <img
+                class="rounded-2xl shadow-lg h-80 object-cover"
+                src="assets/images/hero-img.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why choose us section -->
+      <section class="dark:bg-gray-800 py-12">
+        <div class="container mx-auto px-4">
+          <h2
+            class="text-center text-3xl font-bold text-gray-800 dark:text-gray-200 mb-12"
+          >
+            Why Shop With Us
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div
+              class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-sm hover:shadow transition duration-300"
+            >
+              <div
+                class="bg-primary/10 rounded-full flex items-center justify-center h-16 w-16 mb-4"
+              >
+                <i class="fas fa-shipping-fast text-2xl text-primary"></i>
+              </div>
+              <h3
+                class="text-xl font-semibold text-gray-700 dark:text-gray-200 mb-2"
+              >
+                Free Shipping
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                Free Shipping for all orders over Rs.500. Fast delivery service
+                to your doorstep.
+              </p>
+            </div>
+            <div
+              class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-sm hover:shadow transition duration-300"
+            >
+              <div
+                class="bg-primary/10 rounded-full flex items-center justify-center h-16 w-16 mb-4"
+              >
+                <i class="fas fa-credit-card text-2xl text-primary"></i>
+              </div>
+              <h3
+                class="text-xl font-semibold text-gray-700 dark:text-gray-200 mb-2"
+              >
+                Secure Payment
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                Your payment information is safe with our encrypted system.
+              </p>
+            </div>
+            <div
+              class="bg-gray-50 dark:bg-gray-900 p-6 rounded-xl shadow-sm hover:shadow transition duration-300"
+            >
+              <div
+                class="bg-primary/10 rounded-full flex items-center justify-center h-16 w-16 mb-4"
+              >
+                <i class="fas fa-headset text-2xl text-primary"></i>
+              </div>
+              <h3
+                class="text-xl font-semibold text-gray-700 dark:text-gray-200 mb-2"
+              >
+                24/7 Support
+              </h3>
+              <p class="text-sm text-gray-600 dark:text-gray-300">
+                Our customer support team is available around the clock to help
+                you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Popular section -->
+      <section class="w-full h-screen bg-slate-200">Popular products</section>
+      <section class="w-full h-screen bg-blue-500">Best Seller</section>
+      <section class="w-full h-screen">Mobile phones</section>
+      <section class="w-full h-screen bg-slate-200">Form</section>
+      <section class="w-full h-64 bg-blue-500">CTA</section>
+      <section class="w-full h-screen bg-slate-200">Testimonials</section>
+    </main>
+    <footer class="w-full h-64 bg-blue-700"></footer>
+  </body>
+</html>
