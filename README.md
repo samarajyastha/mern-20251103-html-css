@@ -1,19 +1,23 @@
 # HTML/CSS/Tailwind
 
 ## Web
+
 - WWW: World wide web
 - Internet
 - Websites are made of HTML (structure), CSS (Styling), JavaScript (Interactivity/Behavior)
 
 **Client-Server Model**
-- Client: The browser that sends request to the server. 
+
+- Client: The browser that sends request to the server.
 - Server: The machine that hosts website and sends response.
 
 ## HTML
+
 - Hypertext Markup Language
 - Hypertext: Text with a link (hyperlink)
 
 1. Text elements
+
 - h1 to h6
 - p
 - strong
@@ -25,17 +29,20 @@
 - hr
 
 2. Lists
+
 - ol: ordered list
 - ul: unordered list
 - li: list item
 
 3. Links and media
+
 - a
 - img
 - video
 - iframe
 
 4. Table
+
 - table
 - tr
 - th
@@ -44,15 +51,18 @@
 - tbody
 
 5. Block/Inline elements
+
 - Block: h1 - h6, p, div, li
 - Inline: a, span, img, video
 
 6. Semantics
+
 - All HTML elements should be in lowercase
 - Add `alt` text in images
 - HTML file naming: kebab-case: e.g. hello-world
 
 7. Form
+
 - input: text, number, email, tel, checkbox, radio, file, color, date, time, range
 - form
 - select
@@ -60,23 +70,25 @@
 - textarea
 
 ## CSS
+
 - Cascading Style Sheet
 - Web page styling like color, fonts, positioning, spacing
 
 **Syntax**
+
 ```
 <selector> {
     property: value;
     ....
 }
 
-For e.g: 
+For e.g:
 h1 {
     ...
 }
 
 .class-name {
-   ... 
+   ...
 }
 
 #id-name {
@@ -85,20 +97,24 @@ h1 {
 ```
 
 **Selector**
+
 - Element : h1, p, span : Lowest priority
 - Class : Element > Class Priority < Id : Recommended for CSS (.class-name)
 - Id: Highest priority (#id-name)
 
 **Class VS Id**
+
 - Class should be used for CSS, Id should be used for JS
 - Class name can be reused multiple times, Id must be unique
 
 **CSS Usage**
+
 - Inline
 - Internal
 - External
 
 ### CSS Properties
+
 1. color, background-color
 2. text
 3. font
@@ -127,3 +143,35 @@ h1 {
 - Instead of writing CSS code, we use predefined utility classes directly in HTML
 - Highly customizable, works in dark mode, Just in time (JIT) compiler for faster builds
 
+# Project Init (Design)
+
+1. Initialize git (once)
+2. Add remote repo (once)
+3. Go to the main branch
+4. Create a new git branch (for e.g branch name: `homepage-design`)
+   **Note: Never write code on the main branch**
+5. Write the code in your own branch
+6. Push the branch to the github
+7. Create Pull Request (PR)
+8. Send the PR to your supervisor(Samarajya Shrestha) for review
+9. Repeat from step 3 to work on new page/design
+
+## Folder structure of HTML-CSS
+
+/
+|- /fonts
+|------ Montserrat.ttf
+|- /images
+|------ logo.png
+|------ hero-image.jpg
+|- index.html
+|- about-us.html
+|- services.html
+|- products.html
+|- README.md
+
+## Semantics
+
+- Always use HTML semantics (header, footer, div, section, aside, article, nav)
+- Name HTML files in kebab-case (about-us.html, product-details.html)
+- Tailwind CSS (recommended)
